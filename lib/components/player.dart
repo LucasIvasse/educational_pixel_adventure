@@ -5,6 +5,7 @@ import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
 import 'package:flame_audio/flame_audio.dart';
 import 'package:flutter/services.dart'; // Para input do teclado
+import 'package:pixel_adventure/components/bat.dart';
 import 'package:pixel_adventure/components/checkpoint.dart';
 import 'package:pixel_adventure/components/chicken.dart';
 import 'package:pixel_adventure/components/collision_block.dart';
@@ -139,6 +140,7 @@ class Player extends SpriteAnimationGroupComponent
       if (other is Fruit) other.collidedWithPlayer(); // Coleta fruta
       if (other is Saw) _respawn(); // Morre para serra
       if (other is Chicken) other.collidedWithPlayer(); // Interage com galinha
+      if (other is Bat) other.collidedWithPlayer(); // Interage com morcego
       if (other is Checkpoint) _reachedCheckpoint(); // Ativa checkpoint
     }
     super.onCollisionStart(intersectionPoints, other);

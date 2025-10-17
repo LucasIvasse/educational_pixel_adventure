@@ -28,7 +28,7 @@ class PixelAdventure extends FlameGame
   late CameraComponent cam;
 
   // Cria o jogador com o personagem 'Mask Dude'
-  Player player = Player(character: 'Mask Dude');
+  Player player = Player(character: 'Pink Man');
 
   // Joystick para controle em dispositivos móveis
   late JoystickComponent joystick;
@@ -41,7 +41,7 @@ class PixelAdventure extends FlameGame
   double soundVolume = 1.0;
 
   // Lista com os nomes dos níveis do jogo
-  List<String> levelNames = ['Level-01', 'Level-01'];
+  List<String> levelNames = ['Level-01', 'Level-02'];
   int currentLevelIndex = 0; // Índice do nível atual
 
   // Método chamado quando o jogo é carregado
