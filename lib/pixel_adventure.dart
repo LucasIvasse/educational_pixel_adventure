@@ -41,7 +41,7 @@ class PixelAdventure extends FlameGame
   double soundVolume = 1.0;
 
   // Lista com os nomes dos níveis do jogo
-  List<String> levelNames = ['Level-01', 'Level-01'];
+  List<String> levelNames = ['Level-07'];
   int currentLevelIndex = 0; // Índice do nível atual
 
   // Método chamado quando o jogo é carregado

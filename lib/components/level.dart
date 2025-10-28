@@ -6,8 +6,10 @@ import 'package:flame_tiled/flame_tiled.dart'; // Para carregar mapas Tiled
 import 'package:pixel_adventure/components/background_tile.dart';
 import 'package:pixel_adventure/components/checkpoint.dart';
 import 'package:pixel_adventure/components/chicken.dart';
+import 'package:pixel_adventure/components/frogger.dart';
 import 'package:pixel_adventure/components/collision_block.dart';
 import 'package:pixel_adventure/components/fruit.dart';
+import 'package:pixel_adventure/components/coin.dart';
 import 'package:pixel_adventure/components/player.dart';
 import 'package:pixel_adventure/components/saw.dart';
 import 'package:pixel_adventure/pixel_adventure.dart';
@@ -120,6 +122,30 @@ class Level extends World with HasGameRef<PixelAdventure> {
             );
             add(chicken);
             break;
+
+          case 'Frogger':
+            // Obtém propriedades de patrulha do inimigo
+            final offNeg = spawnPoint.properties.getValue('offNeg');
+            final offPos = spawnPoint.properties.getValue('offPos');
+
+            final frogger = Frogger(
+              position: Vector2(spawnPoint.x, spawnPoint.y),
+              size: Vector2(spawnPoint.width, spawnPoint.height),
+              offNeg: offNeg, // Alcance para esquerda
+              offPos: offPos, // Alcance para direita
+            );
+            add(frogger);
+            break;
+
+            case 'Coin':
+            final coin = Coin(
+              coin: spawnPoint.name, // Tipo da fruta (Apple, Banana, etc.)
+              position: Vector2(spawnPoint.x, spawnPoint.y),
+              size: Vector2(spawnPoint.width, spawnPoint.height),
+            );
+            add(coin);
+            break;
+
 
           default:
           // Ignora objetos com classes desconhecidas

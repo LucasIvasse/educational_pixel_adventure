@@ -10,6 +10,8 @@ import 'package:pixel_adventure/components/chicken.dart';
 import 'package:pixel_adventure/components/collision_block.dart';
 import 'package:pixel_adventure/components/custom_hitbox.dart';
 import 'package:pixel_adventure/components/fruit.dart';
+import 'package:pixel_adventure/components/coin.dart';
+import 'package:pixel_adventure/components/frogger.dart';
 import 'package:pixel_adventure/components/saw.dart';
 import 'package:pixel_adventure/components/utils.dart';
 import 'package:pixel_adventure/pixel_adventure.dart';
@@ -137,8 +139,10 @@ class Player extends SpriteAnimationGroupComponent
       Set<Vector2> intersectionPoints, PositionComponent other) {
     if (!reachedCheckpoint) {
       if (other is Fruit) other.collidedWithPlayer(); // Coleta fruta
+      if (other is Coin) other.collidedWithPlayer(); // Coleta Coin
       if (other is Saw) _respawn(); // Morre para serra
       if (other is Chicken) other.collidedWithPlayer(); // Interage com galinha
+      if (other is Frogger) other.collidedWithPlayer(); // Interage com frogger
       if (other is Checkpoint) _reachedCheckpoint(); // Ativa checkpoint
     }
     super.onCollisionStart(intersectionPoints, other);

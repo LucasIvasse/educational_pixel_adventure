@@ -36,11 +36,14 @@ flutter:
     - assets/images/Traps/Saw/
     - assets/images/Items/Checkpoints/Checkpoint/
     - assets/images/Items/Fruits/
+    - assets/images/Items/Coins/
     - assets/images/Main Characters/
+    - assets/images/Main Characters/Mask Dude/
     - assets/images/Main Characters/Mask Dude/
     - assets/images/Main Characters/Ninja Frog/
     - assets/images/Main Characters/Pink Man/
     - assets/images/Main Characters/Virtual Guy/
     - assets/images/Enemies/Chicken/
+    - assets/images/Enemies/Frogger/
   
   

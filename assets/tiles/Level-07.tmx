@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="95">
+ <tileset firstgid="1" name="Beach_Tiles" tilewidth="16" tileheight="16" tilecount="340" columns="34">
+  <image source="../images/Terrain/Beach_Tiles.png" width="544" height="160"/>
+ </tileset>
+ <tileset firstgid="341" name="Static_Objects" tilewidth="16" tileheight="16" tilecount="162" columns="18">
+  <image source="../images/Terrain/Static_Objects.png" width="288" height="144"/>
+ </tileset>
+ <tileset firstgid="503" name="Terrain (16x16)" tilewidth="16" tileheight="16" tilecount="242" columns="22">
+  <image source="../images/Terrain/Terrain (16x16).png" width="352" height="176"/>
+ </tileset>
+ <tileset firstgid="745" name="Tiled_Sand" tilewidth="16" tileheight="16" tilecount="220" columns="22">
+  <image source="../images/Terrain/Tiled_Sand.png" width="352" height="160"/>
+ </tileset>
+ <layer id="1" name="Background" width="30" height="20">
+  <properties>
+   <property name="BackgroundColor" value="Blue"/>
+  </properties>
+  <data encoding="csv">
+594,636,636,636,636,636,636,636,636,636,636,636,636,636,636,636,636,636,636,636,636,636,636,636,636,636,636,636,636,595,
+615,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,613,
+615,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,613,
+615,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,613,
+615,0,0,0,0,400,0,0,0,0,0,398,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,613,
+615,877,878,879,880,881,882,0,0,0,883,884,0,0,0,0,542,543,544,0,0,0,0,0,0,0,344,345,346,613,
+615,899,900,901,902,903,904,0,0,0,905,906,0,0,0,0,0,0,0,0,0,0,542,543,544,0,362,363,364,613,
+615,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,380,381,382,613,
+615,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,398,399,400,613,
+615,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,753,754,755,756,757,758,759,760,613,
+615,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,751,752,775,902,777,902,779,780,902,782,613,
+615,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,542,773,774,797,798,799,800,801,802,902,804,613,
+615,537,398,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,773,774,819,902,821,902,902,824,902,826,613,
+615,745,746,747,750,0,0,0,877,878,879,880,881,882,0,0,0,0,0,773,774,797,798,799,800,801,802,803,804,613,
+615,767,768,769,772,0,0,0,899,900,901,902,903,904,0,0,0,0,0,773,774,819,902,821,902,902,824,902,826,613,
+615,789,790,791,794,0,0,0,0,0,0,0,0,0,0,0,0,0,542,795,796,775,902,777,902,902,780,902,782,613,
+615,811,812,813,816,0,0,0,0,0,0,0,0,0,0,0,0,0,0,817,818,797,798,799,800,801,802,803,804,613,
+615,833,834,835,838,537,0,0,0,0,0,0,0,0,0,0,398,0,0,839,840,819,902,821,902,902,824,902,826,613,
+615,855,856,857,860,745,746,747,748,749,747,748,748,748,748,747,748,749,750,861,862,855,856,857,858,859,858,859,860,613,
+616,592,592,592,592,592,592,592,592,592,592,592,592,592,592,592,592,592,592,592,592,592,592,592,592,592,592,592,592,617
+</data>
+ </layer>
+ <objectgroup id="2" name="Spawnpoints">
+  <object id="1" name="Player" type="Player" x="30.4091" y="174.909" width="32.1212" height="32"/>
+  <object id="27" name="Purple_Coin" type="Coin" x="368.889" y="107.878" width="33" height="31.6667"/>
+  <object id="41" name="Silver_Coin" type="Coin" x="275.851" y="120.977" width="33" height="31.6667"/>
+  <object id="42" name="Silver_Coin" type="Coin" x="89.5" y="166.5" width="32" height="31.6667"/>
+  <object id="44" name="Purple_Coin" type="Coin" x="159.5" y="37" width="33" height="31.6667"/>
+  <object id="48" type="Saw" x="160" y="192" width="32.7738" height="32.7738">
+   <properties>
+    <property name="isVertical" type="bool" value="false"/>
+    <property name="offNeg" type="float" value="1.8"/>
+    <property name="offPos" type="float" value="1.8"/>
+   </properties>
+  </object>
+  <object id="80" name="Frogger" type="Frogger" x="208" y="256" width="32" height="32">
+   <properties>
+    <property name="offNeg" type="float" value="7"/>
+    <property name="offPos" type="float" value="5"/>
+   </properties>
+  </object>
+  <object id="84" type="Checkpoint" x="16" y="16" width="64" height="64"/>
+  <object id="85" x="-96" y="176"/>
+  <object id="86" name="Silver_Coin" type="Coin" x="261" y="36.6667" width="33" height="31.6667"/>
+  <object id="89" name="Purple_Coin" type="Coin" x="404" y="107.167" width="33" height="31.6667"/>
+ </objectgroup>
+ <objectgroup id="5" name="Collisions">
+  <object id="64" x="0" y="0" width="16" height="320"/>
+  <object id="65" x="0" y="304" width="480" height="16"/>
+  <object id="66" x="464" y="0" width="16" height="320"/>
+  <object id="67" x="0" y="0" width="480" height="16"/>
+  <object id="68" x="336" y="144" width="128" height="16"/>
+  <object id="69" x="336" y="144" width="16" height="160"/>
+  <object id="70" x="304" y="160" width="32" height="16"/>
+  <object id="71" x="304" y="160" width="16" height="144"/>
+  <object id="72" x="16" y="208" width="64" height="16"/>
+  <object id="73" x="64" y="208" width="16" height="96"/>
+  <object id="75" x="80" y="288" width="224" height="16"/>
+  <object id="76" type="Platform" x="288" y="240" width="16" height="16"/>
+  <object id="77" x="128" y="208" width="96" height="32"/>
+  <object id="78" x="80" y="272" width="16" height="16"/>
+  <object id="81" type="Platform" x="288" y="176" width="16" height="16"/>
+  <object id="90" type="Platform" x="352" y="96" width="48" height="16"/>
+  <object id="91" type="Platform" x="256" y="80" width="48" height="16"/>
+  <object id="92" x="160" y="80" width="32" height="32"/>
+  <object id="93" x="16" y="80" width="96" height="32"/>
+ </objectgroup>
+</map>
